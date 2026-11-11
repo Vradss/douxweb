@@ -58,7 +58,7 @@ body {
 .row {
   font-weight: 700;
   font-size: min(19vw, 30svh);
-  line-height: 0.62;
+  line-height: 0.55;
   letter-spacing: -0.01em;
   text-transform: uppercase;
   white-space: nowrap;
@@ -82,8 +82,6 @@ body {
   z-index: 10;
   width: min(calc(56svh * 600 / 724), 62vw);
   aspect-ratio: 600 / 724;
-  margin-top: 4svh;
-  perspective: 1200px;
 }
 
 .photo {
@@ -91,7 +89,6 @@ body {
   width: 100%;
   height: 100%;
   overflow: hidden;
-  transform-style: preserve-3d;
   box-shadow: 0 30px 60px -20px rgba(30, 40, 120, 0.35);
 }
 

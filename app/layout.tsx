@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Dongle } from "next/font/google";
+import { GoogleAnalytics } from "@next/third-parties/google";
 import "./globals.css";
 
 const dongle = Dongle({
@@ -17,6 +18,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="es" className={dongle.variable}>
       <body>{children}</body>
+      <GoogleAnalytics gaId="G-PD7871QW6K" />
     </html>
   );
 }
